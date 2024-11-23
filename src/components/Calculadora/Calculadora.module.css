@@ -1,47 +1,90 @@
 .calculadora {
-    height: 50vh;
-    width: 100%;
-    max-width: 350px;
-    padding: 32px;
+    max-height: 300px;
+    width: 330px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--corSecundaria);
-    position: relative;
-    left: -30px;
+    margin-left: -50px;
+    margin-top: -120px;
+    margin-right: 20px;
     border-radius: 20px 3px;
     color: var(--corTexto);
 }
 
 .calcInput {
-    height: 150px;
+    display: flex;
+    gap: 20px;
+}
+    
+.input {
+    width: 130px;
+    height: 30px;
     padding: 8px;
-    margin-bottom: 24px;
+    margin: 30px 0;
     border-radius: 5px;
     border: none;
-
+    box-shadow: #ff715e48 0px 5px 15px;
+        
     &:focus {
         font-weight: bold;
         outline: none;
         border: 2px solid var(--corPrincipal) ;
-
     }
 }
 
-.calcBotao {
-    height: 150px;
+.resetBtn {
+    width: 120px;
     padding: 8px 16px;
-    margin-top: 16px;
+    background-color: #455A64;
+    color: var(--corTexto);
     border-radius: 5px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: var(--corPrincipal);
-    color: var(--corTexto);
+    margin-right: 10px;
+    cursor: pointer;
 
     &:hover {
         letter-spacing: 2px;
-        cursor: pointer;
-        background-color: var(--corPrincipal);
         font-weight: bold;
+    }
+}
+.btn {
+    margin-top: 30px;
+}
+.resultadoBtn {
+    width: 120px;
+    padding: 8px 16px;
+    background-color: var(--corPrincipal);
+    color: var(--corTexto);
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    
+    &:hover {
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+}
+
+.calcResultado {
+    width: 280px;
+    padding: 10px;
+    border: 3px solid var(--corPrincipal);
+    border-radius: 20px 3px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .calculadora {
+        height: 280px;
+        margin-top: -30px;
+        margin-right: 80px;
+    }
+
+    .calcTitle {
+        font-size: 1.4em;
     }
 }

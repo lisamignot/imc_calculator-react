@@ -7,6 +7,7 @@ function App() {
       <img className='imgFundo' src={ Fundo } alt="" />
 
       <Calculadora />
+
   </div>
   )
 }
