@@ -79,12 +79,48 @@
 
 @media screen and (max-width: 767px) {
     .calculadora {
-        height: 280px;
-        margin-top: -30px;
-        margin-right: 80px;
+        max-width: 90%;
+        width: 300px;
+        margin-top: 5px;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 16px;
     }
 
-    .calcTitle {
+    .calcTitulo {
         font-size: 1.4em;
+        margin-bottom: 20px;
     }
+
+    .calcInput {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .input {
+        width:100%;
+        margin: 0;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+
+    .resultadoBtn {
+        width: 105px;
+
+        &:hover {
+            letter-spacing: 0;
+        }
+    }
+
+    .resetBtn {
+        width: 105px;
+
+        &:hover {
+            letter-spacing: 0;
+        }
+    }
+
+
 }

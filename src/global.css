@@ -32,7 +32,14 @@
 
 @media screen and (max-width: 767px) {
     .container {
+        max-width: 90%;
         background-color: white;
         flex-direction: column;
         justify-content: center;
     }
+
+    .imgFundo {
+        max-width: 60%;
+        max-height: 45vh;
+    }
+}

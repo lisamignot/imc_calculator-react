@@ -47,7 +47,7 @@ const Calculadora = () => {
                 <input className={styles.input} type="number" placeholder='Insira sua altura:' value={ altura } onChange={e => setAltura(parseFloat(e.target.value))} />
             </div>
 
-            <div className={styles.calcresultado}><span><strong>{ resultado }</strong></span></div>
+            <div className={styles.calcresultado}><p>hhh<span><strong>{ resultado }</strong></span></p></div>
 
             <div className={styles.btn}>
                 <button className={styles.resetBtn} onClick={ limparCampos }>LIMPAR</button>
